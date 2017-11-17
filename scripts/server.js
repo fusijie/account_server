@@ -48,7 +48,7 @@ let server = {
 
             //todo:做校验逻辑,做重复攻击防御代码
 
-            let isJSONP = function () {
+            let isJSONP = function (req) {
                 return req.query && req.query.callback;
             };
             let send_bake = res.send;
